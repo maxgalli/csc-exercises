@@ -11,10 +11,10 @@ int main()
   
   *ptr = 5;
   
-  delete ptr;
-
   cout << "Value is " << *ptr << endl;
     
+  delete ptr;
+  
   cout << "Done" << endl;
 
 }

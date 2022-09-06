@@ -9,11 +9,11 @@ int main()
 
   ptr = new int;
   
-  delete ptr;
-
   *ptr = 9;
   
   cout << "Value is " << *ptr << endl;
+  
+  delete ptr;
     
   cout << "Done" << endl;
 

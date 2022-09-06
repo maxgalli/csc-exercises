@@ -11,8 +11,6 @@ int main()
   
   *ptr = 6;
   
-  delete ptr;
-
   cout << "Value is " << *ptr << endl;
   
   delete ptr;

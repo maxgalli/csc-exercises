@@ -5,13 +5,13 @@ int main()
 
   int LENGTH = 16;
   
-  int* a = new int[LENGTH];
-  int* b = new int[LENGTH];
+  int* a = new int[LENGTH + 1];
+  int* b = new int[LENGTH + 1];
   
   cout << "Hello World!" << endl;   
 
-  for (int i=0; i<LENGTH; i++) a[i] = 11;
-  for (int i=0; i<LENGTH; i++) b[i] = 12;
+  for (int i=0; i<=LENGTH; i++) a[i] = 11;
+  for (int i=0; i<=LENGTH; i++) b[i] = 12;
 
   cout << "Value of a[LENGTH] is " << a[LENGTH] << endl;
   cout << "Value of b[LENGTH] is " << b[LENGTH] << endl;

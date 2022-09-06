@@ -31,6 +31,7 @@ using namespace std;
         // but that sorts the entire array, and we only need
         // to sort until we know the half-way point
         sortHalfValues(values, length);
+        //std::sort(values, values+length);
         return values[length/2];
     }
 
@@ -54,8 +55,9 @@ using namespace std;
 
     double stddev(double *values, int length) {
         double sum = 0;
+        double m = mean(values, length);
         for (int i = 0; i< length; i++) {
-            sum += (values[i]-mean(values, length))*(values[i]-mean(values, length));
+            sum += (values[i]-m)*(values[i]-m);
         }
         return sqrt(sum/(length-1));
     }

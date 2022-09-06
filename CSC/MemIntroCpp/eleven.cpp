@@ -13,14 +13,14 @@ int main()
   for (int i=0; i<LENGTH; i++) a[i] = 11;
   for (int i=0; i<LENGTH; i++) b[i] = 12;
 
-  cout << "Value of a[LENGTH] is " << a[LENGTH] << endl;
-  cout << "Value of b[LENGTH] is " << b[LENGTH] << endl;
+  cout << "Value of a[LENGTH] is " << a[LENGTH - 1] << endl;
+  cout << "Value of b[LENGTH] is " << b[LENGTH - 1] << endl;
 
-  a[LENGTH] = 110;
-  b[LENGTH] = 120;
+  a[LENGTH - 1] = 110;
+  b[LENGTH - 1] = 120;
 
-  cout << "New value of a[LENGTH] is " << a[LENGTH] << endl;
-  cout << "New value of b[LENGTH] is " << b[LENGTH] << endl;
+  cout << "New value of a[LENGTH] is " << a[LENGTH - 1] << endl;
+  cout << "New value of b[LENGTH] is " << b[LENGTH - 1] << endl;
    
   cout << "Done" << endl;
 

@@ -13,6 +13,8 @@ int main()
   
   cout << "Value is " << *ptr << endl;
   
+  delete ptr;
+  
   cout << "Done" << endl;
 
 }

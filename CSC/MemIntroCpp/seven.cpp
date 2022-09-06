@@ -10,17 +10,16 @@ int main()
   ptr = new int;
   
   *ptr = 7;
-  
+
   {
-    ptr = new int;
+    int *ptr = new int;
   
     *ptr = 8;
   
     cout << "Inner value is " << *ptr << endl;
-
     delete ptr;
   }
-  
+ 
   cout << "Outer value is " << *ptr << endl;
   
   delete ptr;

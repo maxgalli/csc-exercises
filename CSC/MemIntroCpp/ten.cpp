@@ -7,14 +7,14 @@ int main()
   
   cout << "Hello World!" << endl;   
 
-  cout << "Value is " << *ptr << endl;
-
   ptr = new int;
-  
-  delete ptr;
 
   *ptr = 10;
+  
+  cout << "Value is " << *ptr << endl;
 
+  delete ptr;
+  
   cout << "Done" << endl;
 
 }
